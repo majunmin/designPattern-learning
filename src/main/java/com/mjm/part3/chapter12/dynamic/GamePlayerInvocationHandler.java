@@ -1,12 +1,12 @@
 package com.mjm.part3.chapter12.dynamic;
 
-import com.mjm.part3.chapter12.common.GamePalyerProxy;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
  * Created by majunmin on 2018/11/11.
+ *
+ *
  */
 public class GamePlayerInvocationHandler implements InvocationHandler {
 

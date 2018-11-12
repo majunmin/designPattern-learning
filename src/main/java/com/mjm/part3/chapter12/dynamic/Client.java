@@ -8,6 +8,16 @@ import java.lang.reflect.Proxy;
 
 /**
  * Created by majunmin on 2018/11/12.
+ *
+ * java中动态代理主要有JDK和CGLIB两种方式。
+ *
+ * 区别主要是jdk是代理接口，而cglib是代理类。
+ *
+ * jdk的动态代理调用了Proxy.newProxyInstance(ClassLoader loader,Class<?>[] interfaces,InvocationHandler h) 方法。
+ *
+ *      通过该方法生成字节码，动态的创建了一个代理类，
+ *      interfaces参数是该动态类所继承的所有接口，
+ *      而继承InvocationHandler 接口的类则是实现在调用代理接口方法前后的具体逻辑
  */
 public class Client {
 

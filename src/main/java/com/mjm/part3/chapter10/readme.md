@@ -8,6 +8,8 @@ Template Method lets subclass redefine certain steps of an algorithm **without c
 
 ###组件Component
 基本方法 (具体由子类实现)
+  抽象类中的基本方法尽量设计为 protected，这样做符合迪米特法则，不需要暴露的属性或者方法尽量不要设计为 public,
+  实现类若未必要，尽量不要扩大父类方法的访问权限
 
 模板方法 
 

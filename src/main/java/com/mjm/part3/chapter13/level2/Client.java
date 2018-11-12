@@ -9,7 +9,7 @@ import java.util.Random;
  *
  * 多线程安全， clone 与多线程没有关系， 将对象复制一份-->产生一个新对象，和原有对象一样，这样就叫做原型模式
  */
-public class Client {
+public class Client  {
 
     //发送账单的数量
     public static final int MAX_COUNT = 6;

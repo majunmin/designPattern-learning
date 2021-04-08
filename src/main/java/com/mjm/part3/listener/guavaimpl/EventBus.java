@@ -25,7 +25,7 @@ public class EventBus {
         this.executor = executor;
     }
 
-    public void register(Object object){
+    public void register(Object object) {
         registry.register(object);
     }
 
@@ -33,8 +33,8 @@ public class EventBus {
 //        registry.unRegister(object);
 //    }
 
-    public void post(Object event){
-        executor.execute(() ->{
+    public void post(Object event) {
+        executor.execute(() -> {
             Set<ObserverAction> matchObservers = registry.getMatchObservers(event);
             matchObservers.forEach(observerAction -> observerAction.execute(event));
         });

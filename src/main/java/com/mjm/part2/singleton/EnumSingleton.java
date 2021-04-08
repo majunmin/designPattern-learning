@@ -10,7 +10,7 @@ public enum EnumSingleton {
 
     private byte[] data = new byte[1024];
 
-    private EnumSingleton(){
+    EnumSingleton(){
         System.out.println("EnumSingleton init");
     }
 
@@ -19,10 +19,10 @@ public enum EnumSingleton {
     }
 }
 
-class EnumHolderSingleton{
+class EnumHolderSingleton {
     private byte[] data = new byte[1024];
     private EnumHolderSingleton(){}
-    enum Holder{
+    enum Holder {
         INSTANCE;
         private EnumHolderSingleton instance;
         Holder(){

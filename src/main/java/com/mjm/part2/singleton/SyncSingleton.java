@@ -4,7 +4,7 @@ package com.mjm.part2.singleton;
  * @author majun
  * @date 2018/10/22 17:16
  *
- * 线程安全
+ * 线程安全w
  * 懒加载
  * 多线程情况下 效率低（串行化）
  */

@@ -4,6 +4,7 @@ package com.mjm.part2.singleton;
  * @author majun
  * @date 2018/10/22 10:22
  *
+ *
  * 非线程安全
  * 懒加载
  *

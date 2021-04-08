@@ -21,7 +21,13 @@ import java.lang.reflect.Proxy;
  */
 public class Client {
 
+    static {
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+    }
+
+
     public static void main(String[] args) {
+
         IGamePlayer gamePlayer = new GamePlayer("zhangsan");
         GamePlayerInvocationHandler gamePlayerInvocationHandler = new GamePlayerInvocationHandler(gamePlayer);
 

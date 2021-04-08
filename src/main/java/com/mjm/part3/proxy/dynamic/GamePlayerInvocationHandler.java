@@ -24,7 +24,7 @@ public class GamePlayerInvocationHandler implements InvocationHandler {
     /**
      * 调用被代理的方法
      * 完成对真是方法的调用
-     * 动态代理是根据被代理的接口所生成的所有的方法（给定一个接口，动态代理会宣称我已经实现了该接口下所有的方法了）
+     * 动态代理是根据被代理的接口所生成的所有的方法(给定一个接口，动态代理会宣称我已经实现了该接口下所有的方法了)
      * @param proxy
      * @param method
      * @param args

@@ -21,15 +21,14 @@ public class ObserverRegistry {
 
     private Map<Class<?>, CopyOnWriteArraySet<ObserverAction>> registry = new HashMap<>();
 
-
     public void register(Object observer) {
 
-        Map<Class, List<ObserverAction>> allObserverActions = findAllObserverActions(observer);
+        Map<Class<?>, List<ObserverAction>> allObserverActions = findAllObserverActions(observer);
 
-        for (Map.Entry<Class, List<ObserverAction>> entry : allObserverActions.entrySet()) {
-            Class eventType = entry.getKey();
+        for (Map.Entry<Class<?>, List<ObserverAction>> entry : allObserverActions.entrySet()) {
+            Class<?> eventType = entry.getKey();
             List<ObserverAction> observerActions = entry.getValue();
-            CopyOnWriteArraySet registeredEventActions = registry.get(eventType);
+            CopyOnWriteArraySet<ObserverAction> registeredEventActions = registry.get(eventType);
             if (Objects.isNull(registeredEventActions)) {
                 registry.putIfAbsent(eventType, new CopyOnWriteArraySet<>());
                 registeredEventActions = registry.get(eventType);
@@ -39,12 +38,12 @@ public class ObserverRegistry {
         }
     }
 
-    private Map<Class, List<ObserverAction>> findAllObserverActions(Object observer) {
-        Map<Class, List<ObserverAction>> result = new HashMap<>();
+    private Map<Class<?>, List<ObserverAction>> findAllObserverActions(Object observer) {
+        Map<Class<?>, List<ObserverAction>> result = new HashMap<>();
         Class<?> clazz = observer.getClass();
         for (Method method : getAnnotatedMethods(clazz)) {
             Class<?>[] parameterTypes = method.getParameterTypes();
-            Class eventType = parameterTypes[0];
+            Class<?> eventType = parameterTypes[0];
             ObserverAction observerAction = new ObserverAction(observer, method);
             if (!result.containsKey(eventType)) {
                 result.put(eventType, new ArrayList<>());

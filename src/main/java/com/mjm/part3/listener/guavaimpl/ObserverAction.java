@@ -1,5 +1,7 @@
 package com.mjm.part3.listener.guavaimpl;
 
+import lombok.EqualsAndHashCode;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -9,6 +11,7 @@ import java.lang.reflect.Method;
  * @datetime 2020/8/4 12:42 上午
  * @since
  */
+@EqualsAndHashCode
 public class ObserverAction {
 
     private Object target;

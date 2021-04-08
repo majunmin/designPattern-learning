@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mjm</groupId>
-    <artifactId>GOF</artifactId>
+    <artifactId>designPattern-learning</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>GOF</name>
+    <name>designPattern-learning</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -44,6 +44,108 @@
             <artifactId>guava</artifactId>
             <version>29.0-jre</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.75</version>
+        </dependency>
+
+
+
+        <!--   Adapter Pattern learn-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.slf4j</groupId>-->
+        <!--            <artifactId>slf4j-simple</artifactId>-->
+        <!--            <version>1.7.30</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/ch.qos.logback/logback-classic &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>ch.qos.logback</groupId>-->
+        <!--            <artifactId>logback-classic</artifactId>-->
+        <!--            <version>1.2.3</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/ch.qos.logback/logback-classic &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>ch.qos.logback</groupId>-->
+        <!--            <artifactId>logback-core</artifactId>-->
+        <!--            <version>1.2.3</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+
+<!--                log4j2 dependency-->
+                <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-api</artifactId>
+                    <version>2.14.1</version>
+                </dependency>
+
+                <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                    <version>2.14.1</version>
+                </dependency>
+
+                <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                    <version>2.14.1</version>
+                </dependency>
+
+
+        <!--        log4j-->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.slf4j</groupId>-->
+        <!--            <artifactId>log4j-over-slf4j</artifactId>-->
+        <!--            <version>1.7.30</version>-->
+        <!--        </dependency>-->
+
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.slf4j</groupId>-->
+        <!--            <artifactId>slf4j-log4j12</artifactId>-->
+        <!--            <version>1.7.30</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/log4j/log4j &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>log4j</groupId>-->
+        <!--            <artifactId>log4j</artifactId>-->
+        <!--            <version>1.2.17</version>-->
+        <!--        </dependency>-->
+
+
 
     </dependencies>
 </project>

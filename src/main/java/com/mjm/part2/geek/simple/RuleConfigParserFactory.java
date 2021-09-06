@@ -3,8 +3,10 @@ package com.mjm.part2.geek.simple;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 将 parser 类的创建独立出来, 功能单一
+ */
 public class RuleConfigParserFactory {
-
 
     private static final Map<String, IRuleConfigParser> cachedParsers = new HashMap<>();
 
